@@ -48,12 +48,12 @@ class HomePage extends StatelessWidget {
       _CarouselCard(
         demo: studyDemos['reply'],
         asset: const AssetImage(
-          'assets/studies/reply_card.png',
+          'assets/studies/red_card.png',
           package: 'flutter_gallery_assets',
         ),
         assetColor: const Color(0xFF344955),
         assetDark: const AssetImage(
-          'assets/studies/reply_card_dark.png',
+          'assets/studies/red_card_dark.png',
           package: 'flutter_gallery_assets',
         ),
         assetDarkColor: const Color(0xFF1D2327),
