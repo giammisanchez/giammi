@@ -16,7 +16,6 @@ import 'package:gallery/layout/image_placeholder.dart';
 import 'package:gallery/pages/category_list_item.dart';
 import 'package:gallery/pages/settings.dart';
 import 'package:gallery/pages/splash.dart';
-import 'package:gallery/studies/crane/colors.dart';
 import 'package:gallery/studies/crane/routes.dart' as crane_routes;
 import 'package:gallery/studies/fortnightly/routes.dart' as fortnightly_routes;
 import 'package:gallery/studies/rally/colors.dart';
@@ -47,92 +46,74 @@ class HomePage extends StatelessWidget {
     final carouselCards = <Widget>[
       _CarouselCard(
         demo: studyDemos['reply'],
-        asset: const AssetImage(
-          'assets/studies/red_card.png',
-          package: 'flutter_gallery_assets',
-        ),
+        asset: const AssetImage('assets/location/studies/red_card.png'),
         assetColor: const Color(0xFF344955),
-        assetDark: const AssetImage(
-          'assets/studies/red_card_dark.png',
-          package: 'flutter_gallery_assets',
-        ),
+        assetDark:
+            const AssetImage('assets/location/studies/red_card_dark.png'),
         assetDarkColor: const Color(0xFF1D2327),
         textColor: Colors.white,
-        studyRoute: reply_routes.homeRoute,
+        //studyRoute: reply_routes.homeRoute,
       ),
       _CarouselCard(
         demo: studyDemos['shrine'],
         asset: const AssetImage(
-          'assets/studies/shrine_card.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/orange_card.png',
         ),
         assetColor: const Color(0xFFFEDBD0),
         assetDark: const AssetImage(
-          'assets/studies/shrine_card_dark.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/orange_card_dark.png',
         ),
         assetDarkColor: const Color(0xFF543B3C),
-        textColor: shrineBrown900,
-        studyRoute: shrine_routes.loginRoute,
+        //studyRoute: shrine_routes.loginRoute,
       ),
       _CarouselCard(
         demo: studyDemos['rally'],
-        textColor: RallyColors.accountColors[0],
         asset: const AssetImage(
-          'assets/studies/rally_card.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/yellow_card.png',
         ),
         assetColor: const Color(0xFFD1F2E6),
         assetDark: const AssetImage(
-          'assets/studies/rally_card_dark.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/yellow_card_dark.png',
         ),
         assetDarkColor: const Color(0xFF253538),
-        studyRoute: rally_routes.loginRoute,
+        //studyRoute: rally_routes.loginRoute,
       ),
       _CarouselCard(
         demo: studyDemos['crane'],
         asset: const AssetImage(
-          'assets/studies/crane_card.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/green_card.png',
         ),
         assetColor: const Color(0xFFFBF6F8),
         assetDark: const AssetImage(
-          'assets/studies/crane_card_dark.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/green_card_dark.png',
         ),
         assetDarkColor: const Color(0xFF591946),
-        textColor: cranePurple700,
-        studyRoute: crane_routes.defaultRoute,
+        //studyRoute: crane_routes.defaultRoute,
       ),
       _CarouselCard(
         demo: studyDemos['fortnightly'],
         asset: const AssetImage(
-          'assets/studies/fortnightly_card.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/blue_card.png',
         ),
         assetColor: Colors.white,
         assetDark: const AssetImage(
-          'assets/studies/fortnightly_card_dark.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/blue_card_dark.png',
         ),
         assetDarkColor: const Color(0xFF1F1F1F),
-        studyRoute: fortnightly_routes.defaultRoute,
+        //studyRoute: fortnightly_routes.defaultRoute,
       ),
       _CarouselCard(
         demo: studyDemos['starterApp'],
         asset: const AssetImage(
-          'assets/studies/starter_card.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/purple_card.png',
         ),
         assetColor: const Color(0xFFFAF6FE),
         assetDark: const AssetImage(
-          'assets/studies/starter_card_dark.png',
-          package: 'flutter_gallery_assets',
+          'assets/location/studies/purple_card_dark.png',
         ),
         assetDarkColor: const Color(0xFF3F3D45),
         textColor: Colors.black,
-        studyRoute: starter_app_routes.defaultRoute,
+        //studyRoute: starter_app_routes.defaultRoute,
       ),
     ];
 
@@ -1054,7 +1035,7 @@ class _CarouselCard extends StatelessWidget {
     this.assetColor,
     this.assetDarkColor,
     this.textColor,
-    required this.studyRoute,
+    //required this.studyRoute,
   });
 
   final GalleryDemo? demo;
@@ -1063,7 +1044,7 @@ class _CarouselCard extends StatelessWidget {
   final Color? assetColor;
   final Color? assetDarkColor;
   final Color? textColor;
-  final String studyRoute;
+  //final String studyRoute;
 
   @override
   Widget build(BuildContext context) {
@@ -1086,7 +1067,7 @@ class _CarouselCard extends StatelessWidget {
           onTap: () {
             Navigator.of(context)
                 .popUntil((route) => route.settings.name == '/');
-            Navigator.of(context).restorablePushNamed(studyRoute);
+            //Navigator.of(context).restorablePushNamed(studyRoute);
           },
           child: Stack(
             fit: StackFit.expand,

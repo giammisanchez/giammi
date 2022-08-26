@@ -248,6 +248,25 @@ flutter:
     - packages/shrine_images/36-0.jpg
     - packages/shrine_images/37-0.jpg
 
+  #Import from local
+    - assets/location/studies/red_card.png
+    - assets/location/studies/red_card_dark.png
+
+    - assets/location/studies/orange_card.png
+    - assets/location/studies/orange_card_dark.png
+
+    - assets/location/studies/yellow_card.png
+    - assets/location/studies/yellow_card_dark.png
+
+    - assets/location/studies/green_card.png
+    - assets/location/studies/green_card_dark.png
+
+    - assets/location/studies/blue_card.png
+    - assets/location/studies/blue_card_dark.png
+
+    - assets/location/studies/purple_card.png
+    - assets/location/studies/purple_card_dark.png
+
   generate: true
   uses-material-design: true
   fonts:
