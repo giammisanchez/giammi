@@ -175,7 +175,7 @@ class HomePage extends StatelessWidget {
                         image: Theme.of(context).colorScheme.brightness ==
                                 Brightness.dark
                             ? const AssetImage(
-                                'assets/logo/flutter_logo.png',
+                                'assets/branding/logo/GiammiSanchez_Logo.png ',
                                 package: 'flutter_gallery_assets',
                               )
                             : const AssetImage(
