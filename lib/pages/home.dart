@@ -1021,7 +1021,7 @@ class _DesktopPageButton extends StatelessWidget {
 
 class _CarouselCard extends StatelessWidget {
   const _CarouselCard({
-    required this.demo,
+    this.demo,
     this.asset,
     this.assetDark,
     this.assetColor,

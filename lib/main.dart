@@ -49,7 +49,7 @@ class GalleryApp extends StatelessWidget {
           final options = GalleryOptions.of(context);
           return MaterialApp(
             restorationScopeId: 'rootGallery',
-            title: 'Flutter Gallery',
+            title: 'Gianmarco Sanchez | R&D Software Developer',
             debugShowCheckedModeBanner: false,
             themeMode: options.themeMode,
             theme: GalleryThemeData.lightThemeData.copyWith(
