@@ -248,7 +248,8 @@ flutter:
     - packages/shrine_images/36-0.jpg
     - packages/shrine_images/37-0.jpg
 
-  #Import from local
+  #Import from local --> Cards for Website
+
     - assets/location/studies/red_card.png
     - assets/location/studies/red_card_dark.png
 
@@ -266,6 +267,10 @@ flutter:
 
     - assets/location/studies/purple_card.png
     - assets/location/studies/purple_card_dark.png
+
+    #Import from local --> Logo
+
+    - assets/brading/logo/GiammiSanchez_Logo.png 
 
   generate: true
   uses-material-design: true
