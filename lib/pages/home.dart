@@ -44,7 +44,6 @@ class HomePage extends StatelessWidget {
             const AssetImage('assets/location/studies/red_card_dark.png'),
         assetDarkColor: const Color(0xFF1D2327),
         textColor: Colors.white,
-        //studyRoute: reply_routes.homeRoute,
       ),
       _CarouselCard(
         demo: studyDemos['shrine'],

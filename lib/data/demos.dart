@@ -139,37 +139,37 @@ class Demos {
   static Map<String, GalleryDemo> studies(GalleryLocalizations localizations) {
     return <String, GalleryDemo>{
       'shrine': GalleryDemo(
-        title: 'Shrine',
+        title: 'Orange',
         subtitle: localizations.shrineDescription,
         category: GalleryDemoCategory.study,
         studyId: 'shrine',
       ),
       'rally': GalleryDemo(
-        title: 'Rally',
+        title: 'Yellow',
         subtitle: localizations.rallyDescription,
         category: GalleryDemoCategory.study,
         studyId: 'rally',
       ),
       'crane': GalleryDemo(
-        title: 'Crane',
+        title: 'Green',
         subtitle: localizations.craneDescription,
         category: GalleryDemoCategory.study,
         studyId: 'crane',
       ),
       'fortnightly': GalleryDemo(
-        title: 'Fortnightly',
+        title: 'Blue',
         subtitle: localizations.fortnightlyDescription,
         category: GalleryDemoCategory.study,
         studyId: 'fortnightly',
       ),
       'reply': GalleryDemo(
-        title: 'Reply',
+        title: 'Red',
         subtitle: localizations.replyDescription,
         category: GalleryDemoCategory.study,
         studyId: 'reply',
       ),
       'starterApp': GalleryDemo(
-        title: localizations.starterAppTitle,
+        title: 'Purple',
         subtitle: localizations.starterAppDescription,
         category: GalleryDemoCategory.study,
         studyId: 'starter',
