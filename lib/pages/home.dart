@@ -233,7 +233,7 @@ class _GalleryHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Header(
       color: Theme.of(context).colorScheme.primaryContainer,
-      text: 'Gallery',
+      text: 'Portfolio',
     );
   }
 }
@@ -243,7 +243,7 @@ class _CategoriesHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Header(
       color: Theme.of(context).colorScheme.primary,
-      text: 'Portfolio',
+      text: GalleryLocalizations.of(context)!.homeHeaderCategories,
     );
   }
 }
