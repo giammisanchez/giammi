@@ -140,37 +140,39 @@ class Demos {
     return <String, GalleryDemo>{
       'shrine': GalleryDemo(
         title: 'Orange',
-        subtitle: localizations.shrineDescription,
+        subtitle:
+            'PHPMyAdmin, MySQL, PHP, JS, CSS, WooCommerce, Wordpress Theme',
         category: GalleryDemoCategory.study,
         studyId: 'shrine',
       ),
       'rally': GalleryDemo(
         title: 'Yellow',
-        subtitle: localizations.rallyDescription,
+        subtitle: 'Coming Soon...',
         category: GalleryDemoCategory.study,
         studyId: 'rally',
       ),
       'crane': GalleryDemo(
         title: 'Green',
-        subtitle: localizations.craneDescription,
+        subtitle: 'Coming Soon...',
         category: GalleryDemoCategory.study,
         studyId: 'crane',
       ),
       'fortnightly': GalleryDemo(
         title: 'Blue',
-        subtitle: localizations.fortnightlyDescription,
+        subtitle: 'Coming Soon...',
         category: GalleryDemoCategory.study,
         studyId: 'fortnightly',
       ),
       'reply': GalleryDemo(
         title: 'Red',
-        subtitle: localizations.replyDescription,
+        subtitle:
+            'IIS Express, SQL SMS, C#, TIA Portal v17, Ladder, OPC UA Communication',
         category: GalleryDemoCategory.study,
         studyId: 'reply',
       ),
       'starterApp': GalleryDemo(
         title: 'Purple',
-        subtitle: localizations.starterAppDescription,
+        subtitle: 'Coming Soon...',
         category: GalleryDemoCategory.study,
         studyId: 'starter',
       ),

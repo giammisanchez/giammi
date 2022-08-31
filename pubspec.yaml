@@ -270,7 +270,7 @@ flutter:
 
     #Import from local --> Logo
 
-    - assets/branding/logo/GiammiSanchez_Logo.png 
+    - assets/branding/logo/GiammiSanchez_Logo.png
 
   generate: true
   uses-material-design: true
