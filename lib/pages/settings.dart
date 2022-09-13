@@ -337,8 +337,7 @@ class SettingsFeedback extends StatelessWidget {
       title: GalleryLocalizations.of(context)!.settingsFeedback,
       icon: Icons.feedback,
       onTap: () async {
-        final url =
-            Uri.parse('https://github.com/flutter/gallery/issues/new/choose/');
+        final url = Uri.parse('https://github.com/giammisanchez/');
         if (await canLaunchUrl(url)) {
           await launchUrl(url);
         }

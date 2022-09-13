@@ -44,6 +44,7 @@ class HomePage extends StatelessWidget {
             const AssetImage('assets/location/studies/red_card_dark.png'),
         assetDarkColor: const Color(0xFF1D2327),
         textColor: Colors.white,
+        studyRoute: "red",
       ),
       _CarouselCard(
         demo: studyDemos['shrine'],
@@ -55,7 +56,8 @@ class HomePage extends StatelessWidget {
           'assets/location/studies/orange_card_dark.png',
         ),
         assetDarkColor: const Color(0xFF543B3C),
-        //studyRoute: shrine_routes.loginRoute,
+        //studyRoute: shrine_routes.loginRoute,ù
+        studyRoute: "orange",
       ),
       _CarouselCard(
         demo: studyDemos['rally'],
@@ -67,6 +69,7 @@ class HomePage extends StatelessWidget {
           'assets/location/studies/yellow_card_dark.png',
         ),
         assetDarkColor: const Color(0xFF253538),
+        studyRoute: "yellow",
         //studyRoute: rally_routes.loginRoute,
       ),
       _CarouselCard(
@@ -80,6 +83,7 @@ class HomePage extends StatelessWidget {
         ),
         assetDarkColor: const Color(0xFF591946),
         //studyRoute: crane_routes.defaultRoute,
+        studyRoute: "green",
       ),
       _CarouselCard(
         demo: studyDemos['fortnightly'],
@@ -92,6 +96,7 @@ class HomePage extends StatelessWidget {
         ),
         assetDarkColor: const Color(0xFF1F1F1F),
         //studyRoute: fortnightly_routes.defaultRoute,
+        studyRoute: "blue",
       ),
       _CarouselCard(
         demo: studyDemos['starterApp'],
@@ -105,6 +110,7 @@ class HomePage extends StatelessWidget {
         assetDarkColor: const Color(0xFF3F3D45),
         textColor: Colors.black,
         //studyRoute: starter_app_routes.defaultRoute,
+        studyRoute: "purple",
       ),
     ];
 
@@ -1026,7 +1032,7 @@ class _CarouselCard extends StatelessWidget {
     this.assetColor,
     this.assetDarkColor,
     this.textColor,
-    //required this.studyRoute,
+    required this.studyRoute,
   });
 
   final GalleryDemo? demo;
@@ -1035,7 +1041,7 @@ class _CarouselCard extends StatelessWidget {
   final Color? assetColor;
   final Color? assetDarkColor;
   final Color? textColor;
-  //final String studyRoute;
+  final String studyRoute;
 
   @override
   Widget build(BuildContext context) {
@@ -1046,6 +1052,7 @@ class _CarouselCard extends StatelessWidget {
     final textColor = isDark ? Colors.white.withOpacity(0.87) : this.textColor;
 
     return Container(
+      //TODO Route dei Crou
       // Makes integration tests possible.
       key: ValueKey(demo!.describe),
       margin:
@@ -1055,11 +1062,19 @@ class _CarouselCard extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         clipBehavior: Clip.antiAlias,
         child: InkWell(
-          onTap: () {
-            Navigator.of(context)
-                .popUntil((route) => route.settings.name == '/');
-            //Navigator.of(context).restorablePushNamed(studyRoute);
+          onTap: () async {
+            final url =
+                Uri.parse('https://' + studyRoute + '.giammisanchez.com');
+            if (await canLaunchUrl(url)) {
+              await launchUrl(url);
+            }
           },
+
+          //onTap: () {
+          //Navigator.of(context)
+          //    .popUntil((route) => route.settings.name == '/');
+          //Navigator.of(context).restorablePushNamed(studyRoute);
+          //},
           child: Stack(
             fit: StackFit.expand,
             children: [
