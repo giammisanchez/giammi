@@ -53,10 +53,13 @@ enum GalleryDemoCategory {
   String? displayTitle(GalleryLocalizations localizations) {
     switch (this) {
       case GalleryDemoCategory.other:
-        return localizations.homeCategoryReference;
+        //return localizations.homeCategoryReference;
+        return "Values";
       case GalleryDemoCategory.material:
+        return "Soft Skills";
       case GalleryDemoCategory.cupertino:
-        return toString();
+        //return toString();
+        return "Hard Skills";
       case GalleryDemoCategory.study:
     }
     return null;

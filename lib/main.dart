@@ -11,6 +11,7 @@ import 'package:gallery/constants.dart';
 import 'package:gallery/data/gallery_options.dart';
 import 'package:gallery/pages/backdrop.dart';
 import 'package:gallery/pages/splash.dart';
+import 'package:gallery/routes.dart';
 import 'package:gallery/themes/gallery_theme_data.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -68,6 +69,7 @@ class GalleryApp extends StatelessWidget {
               deviceLocale = locales?.first;
               return basicLocaleListResolution(locales, supportedLocales);
             },
+            onGenerateRoute: RouteConfiguration.onGenerateRoute,
           );
         },
       ),
