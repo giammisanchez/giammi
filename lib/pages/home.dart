@@ -249,7 +249,8 @@ class _CategoriesHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Header(
       color: Theme.of(context).colorScheme.primary,
-      text: GalleryLocalizations.of(context)!.homeHeaderCategories,
+      //text: GalleryLocalizations.of(context)!.homeHeaderCategories,
+      text: "Skills",
     );
   }
 }
