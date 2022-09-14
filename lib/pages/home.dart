@@ -171,7 +171,8 @@ class HomePage extends StatelessWidget {
                     cursor: SystemMouseCursors.click,
                     child: GestureDetector(
                       onTap: () async {
-                        final url = Uri.parse('https://flutter.dev');
+                        final url =
+                            Uri.parse('https://github.com/giammisanchez');
                         if (await canLaunchUrl(url)) {
                           await launchUrl(url);
                         }

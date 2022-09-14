@@ -15,6 +15,7 @@
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>en</string>
+		<!--
 		<string>af</string>
 		<string>am</string>
 		<string>ar_EG</string>
@@ -33,8 +34,10 @@
 		<string>cs</string>
 		<string>da</string>
 		<string>de_AT</string>
+		-->
 		<string>de_CH</string>
 		<string>de</string>
+		<!--
 		<string>el</string>
 		<string>en_AU</string>
 		<string>en_CA</string>
@@ -66,7 +69,9 @@
 		<string>es_US</string>
 		<string>es_UY</string>
 		<string>es_VE</string>
+		-->
 		<string>es</string>
+		<!--
 		<string>et</string>
 		<string>eu</string>
 		<string>fa</string>
@@ -74,7 +79,9 @@
 		<string>fil</string>
 		<string>fr_CA</string>
 		<string>fr_CH</string>
+		-->
 		<string>fr</string>
+		<!--
 		<string>gl</string>
 		<string>gsw</string>
 		<string>gu</string>
@@ -86,7 +93,9 @@
 		<string>id</string>
 		<string>in</string>
 		<string>is</string>
+		-->
 		<string>it</string>
+		<!--
 		<string>iw</string>
 		<string>ja</string>
 		<string>ka</string>
@@ -135,11 +144,14 @@
 		<string>ur</string>
 		<string>uz</string>
 		<string>vi</string>
+		-->
 		<string>zh_CN</string>
+		<!--
 		<string>zh_HK</string>
 		<string>zh_TW</string>
 		<string>zh</string>
 		<string>zu</string>
+		-->
 	</array>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
